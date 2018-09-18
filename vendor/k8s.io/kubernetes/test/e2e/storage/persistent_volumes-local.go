@@ -270,15 +270,627 @@ var _ = utils.SIGDescribe("PersistentVolumes-local ", func() {
 				})
 			})
 
+			Context("Two pods mounting a local volume one after the other", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteSerialTest(config, testVol)
+				})
+			})
+
 			Context("Two pods mounting a local volume at the same time", func() {
 				It("should be able to write from pod1 and read from pod2", func() {
 					twoPodsReadWriteTest(config, testVol)
 				})
 			})
 
-			Context("Two pods mounting a local volume one after the other", func() {
+			Context("0 - custom-pv-test", func() {
 				It("should be able to write from pod1 and read from pod2", func() {
-					twoPodsReadWriteSerialTest(config, testVol)
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("1 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("2 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("3 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("4 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("5 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("6 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("7 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("8 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("9 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("10 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("11 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("12 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("13 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("14 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("15 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("16 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("17 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("18 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("19 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("20 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("0 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("21 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("22 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("23 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("24 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("25 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("26 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("27 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("28 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("29 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("30 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("31 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("32 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("33 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("34 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("35 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("36 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("37 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("38 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("39 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("40 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("41 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("42 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("43 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("44 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("45 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("46 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("47 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("48 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("49 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("50 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("51 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("52 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("53 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("54 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("55 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("56 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("57 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("58 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("59 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("60 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("61 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("62 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("63 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("64 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("65 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("66 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("67 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("68 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("69 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("70 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("71 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("72 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("73 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("74 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("75 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("76 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("77 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("78 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("79 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("80 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("81 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("82 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("83 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("84 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("85 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("86 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("87 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("88 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("89 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("90 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("91 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("92 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("93 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("94 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("95 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("96 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("97 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("98 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("99 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
+				})
+			})
+
+			Context("100 - custom-pv-test", func() {
+				It("should be able to write from pod1 and read from pod2", func() {
+					twoPodsReadWriteTest(config, testVol)
 				})
 			})
 
